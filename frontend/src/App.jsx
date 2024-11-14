@@ -1,5 +1,6 @@
 import './App.css';
 import Home from '../src/pages/Home';
+import loaderImg from '../src/assets/loaderImg.jpeg'
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <>
       {loading ? (
         <div className="loader-container">
+          <img src={loaderImg} alt="" srcset="" />
           <div className="bounce-loader">
             <div></div>
             <div></div>
